@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FGC Part Library</title>
+<style>
+  :root {
+    --bg: #2b2b2b; --panel: #333; --row: #3a3a3a; --row-alt: #363636;
+    --text: #e8e8e8; --muted: #9a9a9a; --accent: #4a90d9; --accent-hover: #5aa0e9;
+    --ok: #4caf50; --warn: #e0a92e; --over: #e05a5a; --border: #454545;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body {
+    font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px;
+    background: var(--bg); color: var(--text); display: flex; flex-direction: column;
+  }
+  header { padding: 10px 12px 8px; background: var(--panel); border-bottom: 1px solid var(--border); }
+  h1 { font-size: 14px; margin: 0 0 8px; font-weight: 600; }
+  .searchbar { display: flex; gap: 6px; }
+  #search {
+    flex: 1; padding: 7px 10px; border-radius: 5px; border: 1px solid var(--border);
+    background: #262626; color: var(--text); font-size: 13px;
+  }
+  #search:focus { outline: none; border-color: var(--accent); }
+  .controls { display: flex; align-items: center; gap: 12px; margin-top: 8px; color: var(--muted); font-size: 12px; }
+  .controls label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+  .count { margin-left: auto; }
+  #list { flex: 1; overflow-y: auto; padding: 4px 0; }
+  .item {
+    padding: 8px 12px; border-bottom: 1px solid #2e2e2e; display: flex;
+    flex-direction: column; gap: 5px;
+  }
+  .item:nth-child(odd) { background: var(--row-alt); }
+  .item.nocad { opacity: 0.55; }
+  .row1 { display: flex; align-items: baseline; gap: 8px; }
+  .name { font-weight: 600; flex: 1; line-height: 1.25; }
+  .part { color: var(--muted); font-family: ui-monospace, "Consolas", monospace; font-size: 11px; white-space: nowrap; }
+  .row2 { display: flex; align-items: center; gap: 8px; }
+  .cat { font-size: 10px; color: var(--muted); background: #2a2a2a; padding: 1px 6px; border-radius: 3px; }
+  .alloc { font-size: 12px; }
+  .alloc b { color: var(--text); }
+  .badge { font-size: 11px; padding: 1px 7px; border-radius: 10px; font-weight: 600; }
+  .b-ok { background: rgba(76,175,80,.18); color: var(--ok); }
+  .b-warn { background: rgba(224,169,46,.18); color: var(--warn); }
+  .b-over { background: rgba(224,90,90,.2); color: var(--over); }
+  .spacer { flex: 1; }
+  select.filesel {
+    background: #262626; color: var(--text); border: 1px solid var(--border);
+    border-radius: 4px; padding: 3px; font-size: 11px; max-width: 150px;
+  }
+  button.insert {
+    background: var(--accent); color: #fff; border: none; border-radius: 4px;
+    padding: 5px 12px; cursor: pointer; font-size: 12px; font-weight: 600;
+  }
+  button.insert:hover { background: var(--accent-hover); }
+  button.insert:disabled { background: #555; cursor: not-allowed; }
+  .nofile { font-size: 11px; color: var(--muted); font-style: italic; }
+  footer {
+    padding: 6px 12px; background: var(--panel); border-top: 1px solid var(--border);
+    font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 10px;
+  }
+  footer a { color: var(--accent); cursor: pointer; text-decoration: none; }
+  #toast {
+    position: fixed; bottom: 44px; left: 50%; transform: translateX(-50%);
+    background: #1e1e1e; border: 1px solid var(--border); color: var(--text);
+    padding: 8px 14px; border-radius: 6px; font-size: 12px; max-width: 90%;
+    opacity: 0; transition: opacity .2s; pointer-events: none; white-space: pre-wrap;
+  }
+  #toast.show { opacity: 1; }
+  .mode { font-size: 10px; padding: 1px 6px; border-radius: 3px; font-weight: 600; letter-spacing: .3px; }
+  .mode-body { background: rgba(74,144,217,.18); color: #6bb0f0; }
+  .mode-comp { background: rgba(150,150,150,.16); color: #b0b0b0; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>FGC Part Library</h1>
+    <div class="searchbar">
+      <input id="search" type="text" placeholder="Search by name or part number…" autocomplete="off">
+    </div>
+    <div class="controls">
+      <label><input type="checkbox" id="onlycad" checked> Only parts with CAD</label>
+      <span class="count" id="count"></span>
+    </div>
+  </header>
+
+  <div id="list"></div>
+
+  <footer>
+    <span id="libname">Loading…</span>
+    <span class="spacer"></span>
+    <a id="openfolder">Open folder</a>
+    <a id="refresh">Refresh counts</a>
+  </footer>
+
+  <div id="toast"></div>
+
+<script>
+  var PARTS = [];
+  var USAGE = {};
+  var BODYKW = [];   // lowercased terms; matching parts import as bodies
+
+  function isBodyPart(p) {
+    var hay = ((p.part || '') + ' ' + (p.name || '')).toLowerCase();
+    return BODYKW.some(function (t) { return t && hay.indexOf(t) !== -1; });
+  }
+  var els = {
+    search: document.getElementById('search'),
+    onlycad: document.getElementById('onlycad'),
+    list: document.getElementById('list'),
+    count: document.getElementById('count'),
+    libname: document.getElementById('libname'),
+    toast: document.getElementById('toast'),
+  };
+
+  // ---- Fusion messaging ----
+  function sendToFusion(action, data) {
+    return adsk.fusionSendData(action, JSON.stringify(data || {}))
+      .then(function (res) { try { return JSON.parse(res); } catch (e) { return {}; } });
+  }
+  // Required so Fusion can call back into the page.
+  window.fusionJavaScriptHandler = { handle: function () { return 'OK'; } };
+
+  function toast(msg) {
+    els.toast.textContent = msg;
+    els.toast.classList.add('show');
+    clearTimeout(window._tt);
+    window._tt = setTimeout(function () { els.toast.classList.remove('show'); }, 3200);
+  }
+
+  function esc(s) {
+    return (s || '').replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function allocBadge(part, qty) {
+    var used = USAGE[part] || 0;
+    if (qty === null || qty === undefined) {
+      return '<span class="alloc">In design: <b>' + used + '</b></span>';
+    }
+    var cls = 'b-ok';
+    if (used >= qty) cls = (used > qty) ? 'b-over' : 'b-warn';
+    return '<span class="alloc">Allotted: <b>' + qty + '</b></span>' +
+           '<span class="badge ' + cls + '">' + used + ' in design</span>';
+  }
+
+  function render() {
+    var q = els.search.value.trim().toLowerCase();
+    var onlyCad = els.onlycad.checked;
+    var terms = q.split(/\s+/).filter(Boolean);
+
+    var rows = PARTS.filter(function (p) {
+      if (onlyCad && !p.has_cad) return false;
+      if (!terms.length) return true;
+      var hay = (p.name + ' ' + p.part + ' ' + (p.category || '')).toLowerCase();
+      return terms.every(function (t) { return hay.indexOf(t) !== -1; });
+    });
+
+    els.count.textContent = rows.length + ' part' + (rows.length === 1 ? '' : 's');
+    els.list.innerHTML = '';
+
+    var frag = document.createDocumentFragment();
+    rows.forEach(function (p) {
+      var div = document.createElement('div');
+      div.className = 'item' + (p.has_cad ? '' : ' nocad');
+
+      var files = p.files || [];
+      var fileControl;
+      if (!files.length) {
+        fileControl = '<span class="nofile">no CAD file</span>';
+      } else if (files.length === 1) {
+        fileControl = '<button class="insert" data-file="' + esc(files[0]) +
+                      '" data-label="' + esc(p.part + ' | ' + p.name) + '">Insert</button>';
+      } else {
+        var opts = files.map(function (f) {
+          return '<option value="' + esc(f) + '">' + esc(f) + '</option>';
+        }).join('');
+        fileControl =
+          '<select class="filesel">' + opts + '</select>' +
+          '<button class="insert" data-multi="1" ' +
+          'data-label="' + esc(p.part + ' | ' + p.name) + '">Insert</button>';
+      }
+
+      div.innerHTML =
+        '<div class="row1">' +
+          '<span class="name">' + esc(p.name) + '</span>' +
+          '<span class="part">' + esc(p.part) + '</span>' +
+        '</div>' +
+        '<div class="row2">' +
+          '<span class="cat">' + esc(p.category || '—') + '</span>' +
+          (p.has_cad ? (isBodyPart(p)
+              ? '<span class="mode mode-body">BODY</span>'
+              : '<span class="mode mode-comp">COMP</span>') : '') +
+          allocBadge(p.part, p.qty) +
+          '<span class="spacer"></span>' +
+          fileControl +
+        '</div>';
+
+      frag.appendChild(div);
+    });
+    els.list.appendChild(frag);
+  }
+
+  // Event delegation for Insert buttons
+  els.list.addEventListener('click', function (e) {
+    var btn = e.target.closest('button.insert');
+    if (!btn) return;
+    var file = btn.getAttribute('data-file');
+    if (btn.getAttribute('data-multi')) {
+      var sel = btn.parentNode.querySelector('select.filesel');
+      file = sel ? sel.value : null;
+    }
+    if (!file) return;
+    var label = btn.getAttribute('data-label');
+    btn.disabled = true; btn.textContent = '…';
+    sendToFusion('insert', { file: file, label: label }).then(function (res) {
+      btn.disabled = false; btn.textContent = 'Insert';
+      if (res && res.usage) USAGE = res.usage;
+      toast(res && res.message ? res.message : 'Done');
+      render();
+    });
+  });
+
+  els.search.addEventListener('input', render);
+  els.onlycad.addEventListener('change', render);
+  document.getElementById('openfolder').addEventListener('click', function () {
+    sendToFusion('openFolder', {});
+  });
+  document.getElementById('refresh').addEventListener('click', function () {
+    sendToFusion('refresh', {}).then(function (data) {
+      if (data) {
+        if (data.usage) USAGE = data.usage;
+        if (data.body_keywords) BODYKW = data.body_keywords;
+        render(); toast('Refreshed');
+      }
+    });
+  });
+
+  // ---- initial load ----
+  function boot() {
+    sendToFusion('ready', {}).then(function (data) {
+      PARTS = (data && data.parts) || [];
+      USAGE = (data && data.usage) || {};
+      BODYKW = (data && data.body_keywords) || [];
+      els.libname.textContent = (data && data.library_name) || 'FGC Kit';
+      render();
+      els.search.focus();
+    });
+  }
+  // Fusion injects adsk after the page loads; wait for it.
+  (function waitAdsk() {
+    if (window.adsk && adsk.fusionSendData) { boot(); }
+    else { setTimeout(waitAdsk, 60); }
+  })();
+</script>
+</body>
+</html>

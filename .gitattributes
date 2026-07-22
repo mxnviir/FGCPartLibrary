@@ -1,0 +1,4 @@
+# CAD assets — never apply text/EOL conversion
+*.STEP binary
+*.step binary
+*.zip binary

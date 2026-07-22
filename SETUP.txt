@@ -1,0 +1,90 @@
+========================================================================
+ FGC Part Library — Fusion 360 Add-In  |  Setup on any device
+========================================================================
+
+This add-in lets you SEARCH the 2026 FIRST Global Challenge kit by NAME
+(not part number) and INSERT the REV STEP parts straight into your Fusion
+design. Each result shows how many your team is ALLOTTED (from the official
+BOM) and how many you've already placed in the current design.
+
+All CAD parts are bundled inside the "parts" folder, so nothing else needs
+to be downloaded — it works out of the box on any computer.
+
+------------------------------------------------------------------------
+ WHAT'S IN THIS ZIP
+------------------------------------------------------------------------
+FGCPartLibrary/
+  FGCPartLibrary.py         <- add-in logic
+  FGCPartLibrary.manifest   <- tells Fusion this is an add-in
+  palette.html              <- the search panel UI
+  catalog.json              <- part names + allotted quantities (from BOM)
+  parts/                    <- ALL 120+ REV STEP CAD files (~505 MB)
+  README.md                 <- full usage notes
+  SETUP.txt                 <- this file
+
+------------------------------------------------------------------------
+ INSTALL (Windows)
+------------------------------------------------------------------------
+1. Unzip this file. You should end up with a folder named exactly:
+      FGCPartLibrary
+   (containing FGCPartLibrary.py, the parts folder, etc.)
+
+2. Copy that whole "FGCPartLibrary" folder into Fusion's AddIns folder:
+      %APPDATA%\Autodesk\Autodesk Fusion 360\API\AddIns\
+   Tip: paste this into the File Explorer address bar and press Enter:
+      %APPDATA%\Autodesk\Autodesk Fusion 360\API\AddIns
+   Then drop the FGCPartLibrary folder inside it. Final path must be:
+      ...\API\AddIns\FGCPartLibrary\FGCPartLibrary.py
+
+3. Open Fusion 360. Press Shift+S (Utilities > Add-Ins > Scripts and Add-Ins).
+
+4. Open the "Add-Ins" tab. Select "FGCPartLibrary" in the list.
+   Check "Run on Startup", then click "Run".
+
+5. The "FGC Part Library" panel opens docked on the RIGHT side of the window.
+   You can reopen it anytime from the Design workspace:
+      Toolbar > ADD-INS panel > "FGC Part Library".
+
+------------------------------------------------------------------------
+ INSTALL (macOS)  -- if you use Fusion on a Mac
+------------------------------------------------------------------------
+Same steps, but the AddIns folder is:
+   ~/Library/Application Support/Autodesk/Autodesk Fusion 360/API/AddIns/
+(In Finder: Go menu > hold Option > Library, then browse to the path above.)
+
+------------------------------------------------------------------------
+ HOW TO USE
+------------------------------------------------------------------------
+- Type in the search box to filter by name, part number, or category
+  (e.g. "motor", "bracket 90", "gearbox", "REV-41-1600"). All words must match.
+- "Allotted" = the Total QTY (packs) your team gets per the BOM.
+  The badge shows how many you've inserted so far (green -> amber when you
+  hit the limit -> red if you exceed it).
+- Click "Insert" to import the STEP as a named component. If a part has more
+  than one model (e.g. "with 2 Cartridges" or "Simple" variants), pick the
+  file from the dropdown first.
+- "Refresh counts" re-scans the design (use after deleting components).
+- "Open folder" opens the bundled parts folder.
+
+------------------------------------------------------------------------
+ NOTES / TROUBLESHOOTING
+------------------------------------------------------------------------
+- These kit STEP files are multi-component assemblies, so they can only be
+  inserted into an ASSEMBLY document. If your current document is a single
+  "Part" document, the add-in automatically opens a new assembly document
+  and inserts there.
+
+- Panel doesn't appear after clicking Run?  It docks on the far right — drag
+  the right dock area wider. If it still doesn't show, Stop the add-in and
+  Run it again, or restart Fusion.
+
+- "Only parts with CAD" checkbox: 40 kit items (cables, screws, zipties and
+  other consumables) have no CAD model. Untick it to see the full kit list.
+
+- Counting tracks only parts inserted THROUGH the panel (named like
+  "REV-41-1300 | Core Hex Motor") and is per-document. Manually inserted
+  parts are not counted.
+
+- Allotted quantity is per PACK as listed in the BOM (e.g. "M3 x 8mm Screws
+  - 100 Pack, QTY 8" means 8 packs allotted, not 8 screws).
+========================================================================

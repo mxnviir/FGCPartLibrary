@@ -1,0 +1,22 @@
+# =====================================================================
+#  Import-as-BODIES list  --  FGC Part Library add-in
+# =====================================================================
+# Parts whose NAME or PART NUMBER contains any line below are imported
+# as loose BODIES (no wrapper component, not grounded).
+# EVERYTHING ELSE is imported as a named COMPONENT (the default).
+#
+# Rules:
+#   - One match term per line.
+#   - Matching is case-insensitive and matches anywhere in the text
+#     (e.g. "extrusion" matches "15mm Extrusion - 150mm - 45 Ends").
+#   - Lines starting with #  and blank lines are ignored.
+#   - You can use a whole part number (REV-41-1762) or a keyword.
+#   - Changes take effect on the next insert -- no need to restart the
+#     add-in. (Click "Refresh counts" to update the on-screen tags.)
+#
+# Add or remove terms below:
+# ---------------------------------------------------------------------
+Extrusion
+C Channel
+Endcap
+

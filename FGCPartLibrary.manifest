@@ -1,0 +1,10 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "author": "FGC Team",
+    "description": {
+        "": "Search the 2026 FGC kit by name and insert REV STEP parts, with allotted-quantity tracking."
+    },
+    "supportedOS": "windows|mac",
+    "editEnabled": true
+}

@@ -1,0 +1,1639 @@
+{
+ "library_name": "2026 FGC Kit CAD Library",
+ "library_subdir": "parts",
+ "library_path": "C:/Users/manvir/Downloads/2026 FGC Kit CAD Library-20260722T082427Z-1-001/2026 FGC Kit CAD Library",
+ "source_bom": "2026 FGC Bill of Materials.pdf",
+ "note": "STEP files are loaded from the bundled 'parts' subfolder (library_subdir) if present, otherwise from library_path. This makes the add-in portable across devices.",
+ "parts": [
+  {
+   "part": "REV-11-1130-PK4",
+   "part_base": "REV-11-1130",
+   "name": "36in PWM Cable - 4 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-21-2452",
+   "part_base": "REV-21-2452",
+   "name": "3in Compliant Wheel - MAX Bore - 30A Soft",
+   "category": "Motion",
+   "qty": 6,
+   "files": [
+    "REV-21-2452.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-21-2540-PK10",
+   "part_base": "REV-21-2540",
+   "name": "MAXSpline Spacer - 1/16in - 10 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-21-2540.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-21-6550",
+   "part_base": "REV-21-6550",
+   "name": "Cone Wheel - 2in to 3in - MAXSpline - Hard",
+   "category": "Motion",
+   "qty": 4,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-21-6564",
+   "part_base": "REV-21-6564",
+   "name": "Cone Wheel - 2in to 3in - MAXSpline - Medium",
+   "category": "Motion",
+   "qty": 4,
+   "files": [
+    "REV-21-6564.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1108",
+   "part_base": "REV-31-1108",
+   "name": "SRS Programmer",
+   "category": "Motors & Servos",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1153",
+   "part_base": "REV-31-1153",
+   "name": "Expansion Hub",
+   "category": "Control System & Sensors",
+   "qty": 1,
+   "files": [
+    "REV-31-1153.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1155",
+   "part_base": "REV-31-1155",
+   "name": "Potentiometer",
+   "category": "Control System & Sensors",
+   "qty": 1,
+   "files": [
+    "REV-31-1155.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1299",
+   "part_base": "REV-31-1299",
+   "name": "Battery Charger",
+   "category": "Control System & Sensors",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1302",
+   "part_base": "REV-31-1302",
+   "name": "12V Slim Battery",
+   "category": "Control System & Sensors",
+   "qty": 2,
+   "files": [
+    "REV-31-1302.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1387",
+   "part_base": "REV-31-1387",
+   "name": "Switch Cable and Bracket",
+   "category": "Cables",
+   "qty": 1,
+   "files": [
+    "REV-31-1387.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1388-PK4",
+   "part_base": "REV-31-1388",
+   "name": "JST PH 4-pin Joiner Board - 4 Pack",
+   "category": "Cables",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1392-PK2",
+   "part_base": "REV-31-1392",
+   "name": "XT30 extension Cable - 30cm - 2 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1394-PK2",
+   "part_base": "REV-31-1394",
+   "name": "XT30 extension Cable - 50cm - 2 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1407-PK4",
+   "part_base": "REV-31-1407",
+   "name": "Sensor Cable, 4 pin - 30cm - 4 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1408-PK4",
+   "part_base": "REV-31-1408",
+   "name": "Sensor Cable, 4 pin - 50cm - 4 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1409-PK4",
+   "part_base": "REV-31-1409",
+   "name": "Sensor Cable, 4 pin - 100cm - 4 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1412-PK4",
+   "part_base": "REV-31-1412",
+   "name": "JST VH 2-pin Motor Cables - 30cm - 4 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1413-PK4",
+   "part_base": "REV-31-1413",
+   "name": "Motor Power Cable, 2 pin - 50cm - 4 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1418-PK2",
+   "part_base": "REV-31-1418",
+   "name": "JST PH 3-pin Communication Cable - 50cm - 2 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1425",
+   "part_base": "REV-31-1425",
+   "name": "Touch Sensor",
+   "category": "Control System & Sensors",
+   "qty": 2,
+   "files": [
+    "REV-31-1425.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1429-PK4",
+   "part_base": "REV-31-1429",
+   "name": "JST VH 2-pin Joiner Board - 4 Pack",
+   "category": "Cables",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1462",
+   "part_base": "REV-31-1462",
+   "name": "Magnetic Limit Switch",
+   "category": "Control System & Sensors",
+   "qty": 2,
+   "files": [
+    "REV-31-1462.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1505",
+   "part_base": "REV-31-1505",
+   "name": "2m Distance Sensor",
+   "category": "Control System & Sensors",
+   "qty": 1,
+   "files": [
+    "REV-31-1505.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1526-PK4",
+   "part_base": "REV-31-1526",
+   "name": "Motor Power Cable, 2 pin - 100cm - 4 Pack",
+   "category": "Cables",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-31-1557",
+   "part_base": "REV-31-1557",
+   "name": "Color Sensor V3",
+   "category": "Control System & Sensors",
+   "qty": 2,
+   "files": [
+    "REV-31-1557.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1595",
+   "part_base": "REV-31-1595",
+   "name": "Control Hub",
+   "category": "Control System & Sensors",
+   "qty": 1,
+   "files": [
+    "REV-31-1595.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-1596",
+   "part_base": "REV-31-1596",
+   "name": "Driver Hub",
+   "category": "Control System & Sensors",
+   "qty": 1,
+   "files": [
+    "REV-31-1596.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-31-2983",
+   "part_base": "REV-31-2983",
+   "name": "REV USB PS4 Compatible Gamepad",
+   "category": "Control System & Sensors",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-39-1598",
+   "part_base": "REV-39-1598",
+   "name": "Logitech C270 UVC USB Camera",
+   "category": "Control System & Sensors",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1119",
+   "part_base": "REV-41-1119",
+   "name": "5.5mm Nut Driver",
+   "category": "Bearings & Hardware",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1124-PK100",
+   "part_base": "REV-41-1124",
+   "name": "M3 x 20mm Hex Cap Screws - 100 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [
+    "REV-41-1124.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1125-PK50",
+   "part_base": "REV-41-1125",
+   "name": "M3 x 35mm Hex Cap Screws - 50 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [
+    "REV-41-1125.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1147-PK2",
+   "part_base": "REV-41-1147",
+   "name": "High Strength Hex Hub - 2 Pack",
+   "category": "Motion",
+   "qty": 6,
+   "files": [
+    "REV-41-1147.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1161-PK50",
+   "part_base": "REV-41-1161",
+   "name": "Zipties, Black, 160mm - 50 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 4,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1162",
+   "part_base": "REV-41-1162",
+   "name": "1.2mm UHMWPE Cord, 10M",
+   "category": "Motion",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1163",
+   "part_base": "REV-41-1163",
+   "name": "Surgical Tubing, 3mm",
+   "category": "Motion",
+   "qty": 6,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1164",
+   "part_base": "REV-41-1164",
+   "name": "Polyurethane Round Belt, 6mm, 6ft",
+   "category": "Motion",
+   "qty": 3,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1165-PK8",
+   "part_base": "REV-41-1165",
+   "name": "Barb for Polyurethane Hollow Belt - 8 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1166-PK2",
+   "part_base": "REV-41-1166",
+   "name": "Battery Holder Plate - 2 Pack",
+   "category": "Structure",
+   "qty": 1,
+   "files": [
+    "REV-41-1166.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1190-PK2",
+   "part_base": "REV-41-1190",
+   "name": "90mm Omni Wheel - 2 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1190.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1215",
+   "part_base": "REV-41-1215",
+   "name": "Storage Tote - Orange",
+   "category": "Storage",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1267",
+   "part_base": "REV-41-1267",
+   "name": "Grip Wheel - 90mm",
+   "category": "Motion",
+   "qty": 8,
+   "files": [
+    "REV-41-1267.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1291",
+   "part_base": "REV-41-1291",
+   "name": "(not in BOM - CAD available)",
+   "category": "Other",
+   "qty": null,
+   "files": [
+    "REV-41-1291.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1300",
+   "part_base": "REV-41-1300",
+   "name": "Core Hex Motor",
+   "category": "Motors & Servos",
+   "qty": 3,
+   "files": [
+    "REV-41-1300.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1303-PK8",
+   "part_base": "REV-41-1303",
+   "name": "15mm Plastic Motion Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 4,
+   "files": [
+    "REV-41-1303.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1304-PK8",
+   "part_base": "REV-41-1304",
+   "name": "15mm Plastic Rod End Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 2,
+   "files": [
+    "REV-41-1304.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1305-PK8",
+   "part_base": "REV-41-1305",
+   "name": "15mm Plastic 90 Degree Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 6,
+   "files": [
+    "REV-41-1305.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1306-PK8",
+   "part_base": "REV-41-1306",
+   "name": "15mm Plastic 60 Degree Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1306.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1307-PK8",
+   "part_base": "REV-41-1307",
+   "name": "15mm Plastic 45 Degree Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 2,
+   "files": [
+    "REV-41-1307.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1308-PK8",
+   "part_base": "REV-41-1308",
+   "name": "15mm Plastic 30 Degree Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1308.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1310-PK8",
+   "part_base": "REV-41-1310",
+   "name": "15mm Plastic 135 Degree Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1310.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1311-PK6",
+   "part_base": "REV-41-1311",
+   "name": "15mm Plastic 120 Degree Bracket - 6 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1311.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1312-PK6",
+   "part_base": "REV-41-1312",
+   "name": "15mm Plastic 150 Degree Bracket - 6 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1312.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1313-PK4",
+   "part_base": "REV-41-1313",
+   "name": "15mm Plastic Indexable Motion Bracket - 4 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1313.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1315-PK4",
+   "part_base": "REV-41-1315",
+   "name": "15mm Gearbox Motion Bracket - 4 Pack",
+   "category": "Brackets",
+   "qty": 2,
+   "files": [
+    "REV-41-1315.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1316-PK4",
+   "part_base": "REV-41-1316",
+   "name": "15mm Hex Pillow Block - 4 Pack",
+   "category": "Motion",
+   "qty": 3,
+   "files": [
+    "REV-41-1316.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1317-PK8",
+   "part_base": "REV-41-1317",
+   "name": "15mm Bearing Pillow Block - 8 Pack",
+   "category": "Motion",
+   "qty": 5,
+   "files": [
+    "REV-41-1317.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1318-PK4",
+   "part_base": "REV-41-1318",
+   "name": "15mm Plastic Variable Angle Bracket - 4 Pack",
+   "category": "Brackets",
+   "qty": 2,
+   "files": [
+    "REV-41-1318.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1319-PK2",
+   "part_base": "REV-41-1319",
+   "name": "15mm Plastic Servo Bracket - 2 Pack",
+   "category": "Brackets",
+   "qty": 3,
+   "files": [
+    "REV-41-1319.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1320-PK8",
+   "part_base": "REV-41-1320",
+   "name": "15mm Plastic Inside Corner Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 4,
+   "files": [
+    "REV-41-1320.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1321-PK8",
+   "part_base": "REV-41-1321",
+   "name": "15mm Plastic Lap Corner Bracket - 8 Pack",
+   "category": "Brackets",
+   "qty": 5,
+   "files": [
+    "REV-41-1321.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1322-PK8",
+   "part_base": "REV-41-1322",
+   "name": "End Cap Bearing - 8 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 4,
+   "files": [
+    "REV-41-1322.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1323-PK12",
+   "part_base": "REV-41-1323",
+   "name": "5mm Hex Shaft Spacer - 15mm - 12 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1323.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1324-PK16",
+   "part_base": "REV-41-1324",
+   "name": "5mm Hex Shaft Spacer - 3mm - 16 Pack",
+   "category": "Motion",
+   "qty": 3,
+   "files": [
+    "REV-41-1324.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1325-PK28",
+   "part_base": "REV-41-1325",
+   "name": "5mm Hex Shaft Spacer - 1.5mm - 28 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-41-1325.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1326-PK12",
+   "part_base": "REV-41-1326",
+   "name": "Through Bore Bearing - Short - 12 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 2,
+   "files": [
+    "REV-41-1326.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1327-PK10",
+   "part_base": "REV-41-1327",
+   "name": "Shaft Collars - 10 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 5,
+   "files": [
+    "REV-41-1327.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1328-PK4",
+   "part_base": "REV-41-1328",
+   "name": "Servo Shaft Adapter - 4 Pack",
+   "category": "Motors & Servos",
+   "qty": 3,
+   "files": [
+    "REV-41-1328.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1329-PK12",
+   "part_base": "REV-41-1329",
+   "name": "Through Bore Bearing - Long - 12 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 4,
+   "files": [
+    "REV-41-1329.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1331-PK8",
+   "part_base": "REV-41-1331",
+   "name": "15 Tooth Plastic Gear - 8 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-41-1331.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1332-PK4",
+   "part_base": "REV-41-1332",
+   "name": "30 Tooth Plastic Gear - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1332.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1333-PK2",
+   "part_base": "REV-41-1333",
+   "name": "125 Tooth Plastic Gear - 2 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1333.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1334-PK4",
+   "part_base": "REV-41-1334",
+   "name": "45 Tooth Plastic Gear - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1334.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1335-PK4",
+   "part_base": "REV-41-1335",
+   "name": "60 Tooth Plastic Gear - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1335.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1336-PK4",
+   "part_base": "REV-41-1336",
+   "name": "72 Tooth Plastic Gear - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1336.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1337-PK2",
+   "part_base": "REV-41-1337",
+   "name": "90 Tooth Plastic Gear - 2 Pack",
+   "category": "Motion",
+   "qty": 3,
+   "files": [
+    "REV-41-1337.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1338-PK4",
+   "part_base": "REV-41-1338",
+   "name": "10 Tooth #25 Sprocket - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1338.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1339-PK4",
+   "part_base": "REV-41-1339",
+   "name": "15 Tooth Plastic #25 Sprocket - 4 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-41-1339.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1340-PK4",
+   "part_base": "REV-41-1340",
+   "name": "20 Tooth Plastic #25 Sprocket - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1340.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1341-PK2",
+   "part_base": "REV-41-1341",
+   "name": "54 Tooth Plastic #25 Sprocket - 2 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1341.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1342-PK4",
+   "part_base": "REV-41-1342",
+   "name": "26 Tooth Plastic #25 Sprocket - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1342.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1343-PK2",
+   "part_base": "REV-41-1343",
+   "name": "40 Tooth #25 Sprocket - 2 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-41-1343.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1344-PK4",
+   "part_base": "REV-41-1344",
+   "name": "30mm Round Belt Pulley - 4 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-41-1344.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1345-PK4",
+   "part_base": "REV-41-1345",
+   "name": "60mm Round Belt Pulley - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1345.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1346-PK2",
+   "part_base": "REV-41-1346",
+   "name": "90mm Round Belt Pulley - 2 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-41-1346.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1347-PK4",
+   "part_base": "REV-41-1347",
+   "name": "5mm x 75mm Hex Shaft - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1347.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1348-PK4",
+   "part_base": "REV-41-1348",
+   "name": "5mm x 90mm Hex Shaft - 4 Pack",
+   "category": "Motion",
+   "qty": 5,
+   "files": [
+    "REV-41-1348.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1349-PK4",
+   "part_base": "REV-41-1349",
+   "name": "5mm x 135mm Hex Shaft - 4 Pack",
+   "category": "Motion",
+   "qty": 4,
+   "files": [
+    "REV-41-1349.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1350-PK4",
+   "part_base": "REV-41-1350",
+   "name": "60mm Traction Wheel - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1350.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1354-PK2",
+   "part_base": "REV-41-1354",
+   "name": "90mm Traction Wheel - 2 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1354.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1359-PK100",
+   "part_base": "REV-41-1359",
+   "name": "M3 x 8mm Hex Cap Screws - 100 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 8,
+   "files": [
+    "REV-41-1359 Simple.STEP",
+    "REV-41-1359.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1360-PK100",
+   "part_base": "REV-41-1360",
+   "name": "M3 x 16mm Hex Cap Screws - 100 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [
+    "REV-41-1360 Simple.STEP",
+    "REV-41-1360.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1361-PK100",
+   "part_base": "REV-41-1361",
+   "name": "M3 Nyloc Nuts - 100 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 8,
+   "files": [
+    "REV-41-1361 Simple.STEP",
+    "REV-41-1361.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1362-PK4",
+   "part_base": "REV-41-1362",
+   "name": "5mm x 400mm Hex Shaft - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1362.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1364-PK4",
+   "part_base": "REV-41-1364",
+   "name": "Servo Gear Adapter - 4 Pack",
+   "category": "Motors & Servos",
+   "qty": 2,
+   "files": [
+    "REV-41-1364.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1365",
+   "part_base": "REV-41-1365",
+   "name": "#25 Roller Chain - 10ft",
+   "category": "Motion",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1366-PK5",
+   "part_base": "REV-41-1366",
+   "name": "#25 Master Links - 5 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1368-PK10",
+   "part_base": "REV-41-1368",
+   "name": "Small Pulley Bearings - 10 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1368.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1373",
+   "part_base": "REV-41-1373",
+   "name": "Hook and Loop Fastener, 13.5mm x 2m",
+   "category": "Bearings & Hardware",
+   "qty": 3,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1374",
+   "part_base": "REV-41-1374",
+   "name": "5.5mm Combination Wrench",
+   "category": "Bearings & Hardware",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1376",
+   "part_base": "REV-41-1376",
+   "name": "1.5mm Allen Wrench",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1377",
+   "part_base": "REV-41-1377",
+   "name": "2mm Allen Wrench",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1430-PK2",
+   "part_base": "REV-41-1430",
+   "name": "15mm Extrusion - 150mm - 45\u00b0 Ends - 2 Pack",
+   "category": "Structure",
+   "qty": 4,
+   "files": [
+    "REV-41-1430.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1431-PK2",
+   "part_base": "REV-41-1431",
+   "name": "15mm Extrusion - 225mm - 90\u00b0 Ends - 2 Pack",
+   "category": "Structure",
+   "qty": 4,
+   "files": [
+    "REV-41-1431.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1432-PK4",
+   "part_base": "REV-41-1432",
+   "name": "15mm Extrusion - 420mm - 90\u00b0 Ends - 4 Pack",
+   "category": "Structure",
+   "qty": 8,
+   "files": [
+    "REV-41-1432.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1433-PK4",
+   "part_base": "REV-41-1433",
+   "name": "15mm Metal Bent Core Hex Motor Bracket V2 - 4 Pack",
+   "category": "Brackets",
+   "qty": 2,
+   "files": [
+    "REV-41-1433.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1452-PK4",
+   "part_base": "REV-41-1452",
+   "name": "15mm Metal 12mm Ball Bearing Mount V2 4 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 2,
+   "files": [
+    "REV-41-1452.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1475-PK4",
+   "part_base": "REV-41-1475",
+   "name": "15mm Metal Offset Servo Bracket V2 - 4 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1475.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1480-PK8",
+   "part_base": "REV-41-1480",
+   "name": "15mm Metal 90 Degree Bracket V2 - 8 Pack",
+   "category": "Brackets",
+   "qty": 2,
+   "files": [
+    "REV-41-1480.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1483-PK8",
+   "part_base": "REV-41-1483",
+   "name": "15mm Metal T Bracket V2 - 8 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1483.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1485-PK4",
+   "part_base": "REV-41-1485",
+   "name": "15mm Metal Bent Servo Bracket V2 - 4 Pack",
+   "category": "Brackets",
+   "qty": 4,
+   "files": [
+    "REV-41-1485.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1491-PK4",
+   "part_base": "REV-41-1491",
+   "name": "M3 Standoff - 30mm - 4 Pack",
+   "category": "Structure",
+   "qty": 2,
+   "files": [
+    "REV-41-1491.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1492-PK4",
+   "part_base": "REV-41-1492",
+   "name": "M3 Standoff - 40mm - 4 Pack",
+   "category": "Structure",
+   "qty": 2,
+   "files": [
+    "REV-41-1492.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1493-PK4",
+   "part_base": "REV-41-1493",
+   "name": "M3 Standoff - 45mm - 4 Pack",
+   "category": "Structure",
+   "qty": 2,
+   "files": [
+    "REV-41-1493.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1503-PK8",
+   "part_base": "REV-41-1503",
+   "name": "22 Tooth Plastic Right Angle Rack Gear - 8 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1503.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1528-PK20",
+   "part_base": "REV-41-1528",
+   "name": "5mm Hex to 8mm Round Bearing Insert - 20 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [
+    "REV-41-1528.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1562-PK8",
+   "part_base": "REV-41-1562",
+   "name": "15mm Corner Cube - 8 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1562.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1568-PK2",
+   "part_base": "REV-41-1568",
+   "name": "15mm Extrusion - 120mm - 90\u00b0 Ends - 2 Pack",
+   "category": "Structure",
+   "qty": 5,
+   "files": [
+    "REV-41-1568.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1600",
+   "part_base": "REV-41-1600",
+   "name": "UltraPlanetary Gearbox Kit & HD Hex Motor",
+   "category": "Motors & Servos",
+   "qty": 7,
+   "files": [
+    "REV-41-1600 with 2 Cartridges.STEP",
+    "REV-41-1600.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1609",
+   "part_base": "REV-41-1609",
+   "name": "UltraPlanetary Hardware Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1621-PK4",
+   "part_base": "REV-41-1621",
+   "name": "UltraPlanetary Outside Mounting Bracket - 4 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1621.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1623-PK4",
+   "part_base": "REV-41-1623",
+   "name": "UltraPlanetary Bent Mounting Bracket - 4 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1623.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1624-PK4",
+   "part_base": "REV-41-1624",
+   "name": "UltraPlanetary Flat Mounting Bracket - 4 Pack",
+   "category": "Brackets",
+   "qty": 2,
+   "files": [
+    "REV-41-1624.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1625-PK2",
+   "part_base": "REV-41-1625",
+   "name": "UltraPlanetary Long Reach Mounting Bracket - 2 Pack",
+   "category": "Brackets",
+   "qty": 1,
+   "files": [
+    "REV-41-1625.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1683-PK4",
+   "part_base": "REV-41-1683",
+   "name": "5mm Hex Bearing Block - 4 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 2,
+   "files": [
+    "REV-41-1683.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1687",
+   "part_base": "REV-41-1687",
+   "name": "U Channel Endcap",
+   "category": "Brackets",
+   "qty": 4,
+   "files": [
+    "REV-41-1687.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1702-PK4",
+   "part_base": "REV-41-1702",
+   "name": "Tensioning Bushing - 39mm - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-1702.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1713-PK100",
+   "part_base": "REV-41-1713",
+   "name": "M3 x 6mm Hex Cap Screws - 100 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [
+    "REV-41-1713.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1762",
+   "part_base": "REV-41-1762",
+   "name": "45mm x 15mm C Channel - 408mm",
+   "category": "Structure",
+   "qty": 6,
+   "files": [
+    "REV-41-1762.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1767",
+   "part_base": "REV-41-1767",
+   "name": "45mm x 15mm C Channel - 248mm",
+   "category": "Structure",
+   "qty": 4,
+   "files": [
+    "REV-41-1767.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1820",
+   "part_base": "REV-41-1820",
+   "name": "Aluminum Double Servo Arm",
+   "category": "Motors & Servos",
+   "qty": 2,
+   "files": [
+    "REV-41-1820.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1828",
+   "part_base": "REV-41-1828",
+   "name": "Aluminum Servo Horn V2",
+   "category": "Motors & Servos",
+   "qty": 4,
+   "files": [
+    "REV-41-1828.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1839-PK2",
+   "part_base": "REV-41-1839",
+   "name": "4mm Corrugated Plastic Sheet - 450mm x 300mm - 2 Pack",
+   "category": "Structure",
+   "qty": 4,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-1846-PK8",
+   "part_base": "REV-41-1846",
+   "name": "Motion Pattern Spacer - 8 Pack",
+   "category": "Motion",
+   "qty": 1,
+   "files": [
+    "REV-41-1846.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-1907-PK25",
+   "part_base": "REV-41-1907",
+   "name": "M3 X 8mm T-Slot Screw - 25 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 4,
+   "files": [
+    "REV-41-1907 Simple.STEP",
+    "REV-41-1907.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-2025",
+   "part_base": "REV-41-2025",
+   "name": "(not in BOM - CAD available)",
+   "category": "Other",
+   "qty": null,
+   "files": [
+    "REV-41-2025.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-2035",
+   "part_base": "REV-41-2035",
+   "name": "Compliant Wheel - 2in - 5mm Hex Bore - Soft",
+   "category": "Motion",
+   "qty": 6,
+   "files": [
+    "REV-41-2035.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-2038-PK2",
+   "part_base": "REV-41-2038",
+   "name": "MAX Hub - 5mm Hex - Plastic - 2 Pack",
+   "category": "Motion",
+   "qty": 7,
+   "files": [
+    "REV-41-2038.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-2080",
+   "part_base": "REV-41-2080",
+   "name": "Ultra 90 Degree Gearbox",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-2080.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-2150-PK4",
+   "part_base": "REV-41-2150",
+   "name": "1in Grip Wheel - 5mm Hex Bore - Soft - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-2702-PK4",
+   "part_base": "REV-41-2702",
+   "name": "Flap Wheel - 5mm Hex Bore - Medium - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-2702.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-2703-PK4",
+   "part_base": "REV-41-2703",
+   "name": "Flap Wheel - 4in - 5mm Hex - 2F - Hard - 4 Pack",
+   "category": "Motion",
+   "qty": 2,
+   "files": [
+    "REV-41-2703.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-3049",
+   "part_base": "REV-41-3049",
+   "name": "Polycarbonate Sheet 400x350x1mm",
+   "category": "Structure",
+   "qty": 4,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-3334",
+   "part_base": "REV-41-3334",
+   "name": "Smart Robot Servo V2",
+   "category": "Motors & Servos",
+   "qty": 6,
+   "files": [
+    "REV-41-[3334-3336].STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-3337",
+   "part_base": "REV-41-3337",
+   "name": "SRS V2 Steel Servo Gear Replacement Set",
+   "category": "Motors & Servos",
+   "qty": 2,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-3694",
+   "part_base": "REV-41-3694",
+   "name": "FGC26 - Wildfire Balls - Game Piece A",
+   "category": "Game Specific",
+   "qty": 6,
+   "files": [
+    "WILDFIRE - GAMEPIECE.step"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-41-3697",
+   "part_base": "REV-41-3697",
+   "name": "FGC26 - Climbing Brace - Field Element A",
+   "category": "Game Specific",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-41-3698",
+   "part_base": "REV-41-3698",
+   "name": "FGC26 - Heat Shrink - Field Element B",
+   "category": "Game Specific",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-42-1442",
+   "part_base": "REV-42-1442",
+   "name": "#25 Chain Tool",
+   "category": "Motion",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-45-1259",
+   "part_base": "REV-45-1259",
+   "name": "15mm Hinge Kit",
+   "category": "Motion",
+   "qty": 3,
+   "files": [
+    "REV-45-1259.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-45-1507",
+   "part_base": "REV-45-1507",
+   "name": "15mm Linear Motion Kit V2",
+   "category": "Motion",
+   "qty": 4,
+   "files": [
+    "REV-45-1507.STEP"
+   ],
+   "has_cad": true
+  },
+  {
+   "part": "REV-45-1727",
+   "part_base": "REV-45-1727",
+   "name": "Extrusion Channel Cover Color Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-45-3691",
+   "part_base": "REV-45-3691",
+   "name": "General Storage Storage Tote - Orange",
+   "category": "",
+   "qty": 1,
+   "files": [],
+   "has_cad": false
+  },
+  {
+   "part": "REV-49-1559-PK10",
+   "part_base": "REV-49-1559",
+   "name": "8mm x 12mm x 3.5mm Flanged Bearing - 10 Pack",
+   "category": "Bearings & Hardware",
+   "qty": 1,
+   "files": [
+    "REV-49-1559.STEP"
+   ],
+   "has_cad": true
+  }
+ ]
+}
