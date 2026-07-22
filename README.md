@@ -5,13 +5,41 @@ the matching REV STEP part into your active Fusion design. Each result shows how
 of that part your team is **allotted** (from the official BOM) and how many you've
 already **placed in the current design**.
 
-## Install / Enable
+## Setup on a new machine
 
-The add-in is already in your Fusion AddIns folder:
+The add-in loads STEP files from its own bundled `parts/` folder, so it is fully
+self-contained — no extra downloads. You just need the `FGCPartLibrary` folder to end
+up inside Fusion's **AddIns** folder:
 
+- **Windows:** `%APPDATA%\Autodesk\Autodesk Fusion 360\API\AddIns\`
+- **macOS:** `~/Library/Application Support/Autodesk/Autodesk Fusion 360/API/AddIns/`
+
+The final path must be `…/AddIns/FGCPartLibrary/FGCPartLibrary.py` (the folder must be
+named exactly **FGCPartLibrary**, not nested one level deeper).
+
+### Method A — clone with Git (recommended; easy to update later)
+
+Open a terminal and clone straight into the AddIns folder:
+
+```bash
+# Windows (PowerShell / Terminal)
+cd "$env:APPDATA\Autodesk\Autodesk Fusion 360\API\AddIns"
+git clone https://github.com/mxnviir/FGCPartLibrary.git
+
+# macOS / Linux
+cd "$HOME/Library/Application Support/Autodesk/Autodesk Fusion 360/API/AddIns"
+git clone https://github.com/mxnviir/FGCPartLibrary.git
 ```
-%APPDATA%\Autodesk\Autodesk Fusion 360\API\AddIns\FGCPartLibrary\
-```
+
+To pull future updates later: `cd` into that folder and run `git pull`.
+
+### Method B — download the ZIP (no Git needed)
+
+1. Go to <https://github.com/mxnviir/FGCPartLibrary> → green **Code** button → **Download ZIP**.
+2. Unzip it. GitHub names the folder `FGCPartLibrary-main` — **rename it to `FGCPartLibrary`**.
+3. Move that `FGCPartLibrary` folder into the AddIns folder shown above.
+
+### Then enable it in Fusion
 
 1. Open Fusion 360.
 2. Go to **Utilities → Add-Ins → Scripts and Add-Ins** (or press **Shift+S**).
@@ -19,6 +47,11 @@ The add-in is already in your Fusion AddIns folder:
    Tick **Run on Startup** so it loads automatically next time.
 4. The **FGC Part Library** panel opens (docked on the right). You can also reopen it
    from **Design workspace → Add-Ins panel → FGC Part Library**.
+
+> **Note:** the `catalog.json` includes a `library_path` fallback pointing at the
+> original author's Downloads folder. You can ignore it — the add-in uses the bundled
+> `parts/` folder first. It only matters if you delete `parts/` and want to point at an
+> external STEP folder instead.
 
 ## How to use
 
